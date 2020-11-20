@@ -25,5 +25,12 @@ export class CrewComponent implements OnInit {
   ngOnInit() { }
 
   // Code the 'addCrewMember' function here:
-
+  addCrewMember(candidate: object) {
+    if (this.crew.indexOf(candidate) < 0 && this.crew.length < 3) {
+      return this.crew.push.candidate;
+    };
+    if (this.crew.indexOf(candidate) >= 0) {
+      this.crew.splice()
+    }
+  };
 }
